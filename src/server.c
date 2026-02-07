@@ -54,23 +54,23 @@ typedef struct {
 } PlayerSlot;
 
 typedef struct {
-    // ===== turn control =====
+    // turn control
     int game_active;
     int current_turn;
     int turn_done;
 
     PlayerSlot slot[MAX_PLAYERS];
 
-    // ===== board state =====
-    int positions[MAX_PLAYERS]; // 0..100
+    //board state
+    int positions[MAX_PLAYERS]; // 0-100
     int winner_id;              // -1 if none
 
-    // ===== process-shared sync (Member 3) =====
+    // process-shared sync 
     pthread_mutex_t game_mtx;
     pthread_cond_t  turn_cv;
     pthread_cond_t  turn_done_cv;
 
-    // ===== logger queue (Member 4) =====
+    //  logger queue
     pthread_mutex_t log_mtx;
     int log_head;
     int log_tail;
@@ -78,12 +78,12 @@ typedef struct {
     sem_t log_slots;
     sem_t log_items;
 
-    // ===== scores (Member 4) =====
+    //scores 
     pthread_mutex_t scores_mtx;
     struct { char name[MAX_NAME]; int wins; } scores[SCORE_MAX];
     int score_count;
 
-    // ===== last dice (used by your previous winner logic; keep if you want) =====
+    // last dice
     int last_roll[MAX_PLAYERS];
 
     volatile sig_atomic_t shutting_down;
