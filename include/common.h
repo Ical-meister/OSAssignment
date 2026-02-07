@@ -6,7 +6,7 @@
 
 #define SERVER_FIFO "/tmp/snakes_server_fifo"
 #define MAX_NAME    32
-#define MAX_TEXT    128
+#define MAX_TEXT    8192
 #define FIFO_PATH   64
 
 typedef enum {

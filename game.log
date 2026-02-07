@@ -1,0 +1,30 @@
+[2026-02-07 06:58:40] (pid=8875) [server] started fifo=/tmp/snakes_server_fifo
+[2026-02-07 06:58:40] (pid=8875) JOIN name='p1' pid=8948 slot=0
+[2026-02-07 06:58:41] (pid=8875) JOIN name='p2' pid=8949 slot=1
+[2026-02-07 06:58:43] (pid=8875) JOIN name='p3' pid=8953 slot=2
+[2026-02-07 06:59:57] (pid=8971) QUIT name='p2' slot=1
+[2026-02-07 07:00:01] (pid=8972) QUIT name='p3' slot=2
+[2026-02-07 07:00:03] (pid=8968) QUIT name='p1' slot=0
+[2026-02-07 10:13:11] (pid=3861) [server] started fifo=/tmp/snakes_server_fifo
+[2026-02-07 10:13:11] (pid=3861) JOIN name='p1' pid=3963 slot=0
+[2026-02-07 10:13:20] (pid=3861) JOIN name='p2' pid=3968 slot=1
+[2026-02-07 10:13:24] (pid=3861) JOIN name='p3' pid=3970 slot=2
+[2026-02-07 10:13:36] (pid=3966) ROLL name='p1' slot=0 dice=4 pos=14
+[2026-02-07 10:14:01] (pid=3969) ROLL name='p2' slot=1 dice=2 pos=2
+[2026-02-07 10:14:02] (pid=3971) ROLL name='p3' slot=2 dice=2 pos=2
+[2026-02-07 10:14:10] (pid=3966) ROLL name='p1' slot=0 dice=6 pos=38
+[2026-02-07 10:14:13] (pid=3969) ROLL name='p2' slot=1 dice=3 pos=5
+[2026-02-07 10:14:17] (pid=3971) ROLL name='p3' slot=2 dice=3 pos=5
+[2026-02-07 10:14:33] (pid=3966) ROLL name='p1' slot=0 dice=6 pos=44
+[2026-02-07 10:14:50] (pid=3971) QUIT name='p3' slot=2
+[2026-02-07 10:14:52] (pid=3969) QUIT name='p2' slot=1
+[2026-02-07 10:15:16] (pid=3966) QUIT name='p1' slot=0
+[2026-02-07 10:13:11] (pid=3861) [server] started fifo=/tmp/snakes_server_fifo
+[2026-02-07 10:20:01] (pid=4045) [server] started fifo=/tmp/snakes_server_fifo
+[2026-02-07 10:20:01] (pid=4045) JOIN name='p1' pid=4062 slot=0
+[2026-02-07 10:20:33] (pid=4045) JOIN name='p2' pid=4137 slot=1
+[2026-02-07 10:20:40] (pid=4045) JOIN name='p3' pid=4140 slot=2
+[2026-02-07 10:20:43] (pid=4065) ROLL name='p1' slot=0 dice=1 pos=1
+[2026-02-07 10:29:32] (pid=4065) QUIT name='p1' slot=0
+[2026-02-07 10:29:38] (pid=4141) QUIT name='p3' slot=2
+[2026-02-07 10:29:40] (pid=4138) QUIT name='p2' slot=1
